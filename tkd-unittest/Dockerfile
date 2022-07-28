@@ -1,4 +1,4 @@
-FROM yairaba/tkd-java:10 
+FROM yairaba/tkd-java:11
 
 ARG DEBIAN_FRONTEND=noninteractive
 SHELL ["/bin/bash", "-c"] 
