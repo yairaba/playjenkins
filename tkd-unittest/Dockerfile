@@ -1,8 +1,8 @@
 FROM yairaba/tkd-java:11
 
 ARG DEBIAN_FRONTEND=noninteractive
-SHELL ["/bin/bash", "-c"] 
 
+RUN ln -sf /bin/bash /bin/sh
 #python 3.8 && venv libpq-dev install need it for  
 ENV APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=DontWarn 
 RUN apt-get update && apt-get install --no-install-recommends -y python3.8 python3.8-dev python3-pip python3-wheel build-essential libpq-dev && \
@@ -47,3 +47,5 @@ RUN mkdir /usr/java && \
 # COPY dev.zip /opt
 # RUN unzip /opt/dev.zip -d /opt && \
 #     sudo rm -rf /opt/dev.zip
+
+SHELL ["/bin/bash", "-c"] 
