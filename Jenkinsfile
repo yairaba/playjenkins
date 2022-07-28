@@ -41,7 +41,7 @@ spec:
             sh '''
             /kaniko/executor --dockerfile `pwd`/Dockerfile \
                              --context `pwd` \
-                             --destination=justmeandopensource/myweb:${BUILD_NUMBER}
+                             --destination=yairaba/test:${BUILD_NUMBER}
             '''
           }
         }
