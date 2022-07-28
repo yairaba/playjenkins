@@ -1,4 +1,4 @@
-FROM yairaba/tkd-java:11
+FROM yairaba/tkd-java:10
 
 ARG DEBIAN_FRONTEND=noninteractive
 
