@@ -39,7 +39,7 @@ spec:
         container('kaniko') {
           script {
             sh '''
-            /kaniko/executor --dockerfile `pwd`/Dockerfile \
+            /kaniko/executor --dockerfile `pwd`/Dockerfile/kaniko-test \
                              --context `pwd`/kaniko-test \
                              --destination=yairaba/test:${BUILD_NUMBER}
             '''
