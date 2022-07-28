@@ -1,6 +1,7 @@
 FROM yairaba/tkd-java:10 
 
 ARG DEBIAN_FRONTEND=noninteractive
+SHELL ["/bin/bash", "-c"] 
 
 #python 3.8 && venv libpq-dev install need it for  
 ENV APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=DontWarn 
