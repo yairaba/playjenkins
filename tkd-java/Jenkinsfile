@@ -41,7 +41,7 @@ spec:
             sh '''
             /kaniko/executor --dockerfile `pwd`/tkd-java/Dockerfile \
                              --context `pwd`/tkd-java \
-                             --destination=yairaba/test:${BUILD_NUMBER}
+                             --destination=yairaba/tkd-java:${BUILD_NUMBER}
             '''
           }
         }
