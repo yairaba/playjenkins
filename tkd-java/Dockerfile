@@ -1,4 +1,4 @@
-FROM yairaba/tkd-base AS ztkd-java
+FROM yairaba/tkd-base:9 AS ztkd-java
 
 ENV JAVA_HOME=/usr/lib/jvm/java-8-oracle/
 ARG DEBIAN_FRONTEND=noninteractive
