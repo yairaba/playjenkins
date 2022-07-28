@@ -1,0 +1,27 @@
+alias frontend='cd /mnt/tkd1/takadu/frontend'
+alias production='cd /mnt/tkd1/takadu/production'
+alias logs='cd /mnt/tkd3/takadu/logs'
+alias h=history
+alias rm='rm -i'
+alias psg='ps -ef | grep $1'
+alias bin='cd /mnt/tkd1/takadu/production/scripts'
+alias projects='cd /mnt/tkd1/takadu/projects'
+alias conf='cd /mnt/tkd1/takadu/production/conf'
+alias data='cd /mnt/tkd2/data'
+alias tk=/mnt/tkd1/takadu/production/scripts/tk.sh
+alias ll='ls -la'
+alias l=ll
+alias ~1='cd /mnt/tkd1'
+alias upgrade='UPGRADE_DIR=`pwd` ; PROJECT=${UPGRADE_DIR##*/} ; TMP=${UPGRADE_DIR%/$PROJECT} ; DATE=${TMP##*/} ; nohup ./upgrade.sh $PROJECT $DATE > upgrade.log &'
+alias sunday='cd /mnt/tkd3/datapipe/sunday_upgrade/'
+export PATH=$PATH:/var/lib/apache-ant-1.8.2/bin
+export PATH=$PATH:/var/lib/gradle/bin
+export PATH=$PATH:/usr/local/pgsql/bin 
+export PGDATA=/mnt/tkd3/tile_server/postgres
+export JAVA_HOME=/usr/java/default
+export PYTHONPATH=/mnt/tkd1/takadu/production/python
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+export TAKADU_HOME=/mnt/tkd1/takadu/production
+export TAKADU_LOGS_DIR=`$TAKADU_HOME/scripts/get_conf.py takadu.logs.dir`
+export HISTTIMEFORMAT="%F %T "
+export PS1="\u@\h:\w>"
