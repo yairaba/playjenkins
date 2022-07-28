@@ -40,7 +40,7 @@ spec:
           script {
             sh '''
             /kaniko/executor --dockerfile `pwd`/Dockerfile \
-                             --context `pwd` \
+                             --context `pwd`/kaniko-test \
                              --destination=yairaba/test:${BUILD_NUMBER}
             '''
           }
