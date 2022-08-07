@@ -13,6 +13,7 @@ metadata:
   name: kaniko
 spec:
   containers:  
+    //test
   - name: kaniko
     image: gcr.io/kaniko-project/executor:debug
     command:
