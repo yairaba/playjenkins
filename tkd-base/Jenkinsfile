@@ -38,6 +38,7 @@ spec:
 
     stage('Kaniko Build & Push Image') {
       steps {
+
         container('kaniko') {
           script {
             sh '''
